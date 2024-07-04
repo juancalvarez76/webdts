@@ -3,9 +3,9 @@
 :root{
 	--blanco: #fff;
 	--negro: #000;
-	--verdeeco: hsl(140, 100%, 55%);
+	--verdeeco: hsla(140, 98%, 58%, 0.952);
 	--azultec: #005ca7;
-	--gristec: #757575;
+	--gristec: #e4dede;
 }
 
 /*estilos Globales */
@@ -51,8 +51,7 @@ html {
 
 	.contenedor{
 			
-			max-width: 80rem;
-				
+			max-width: 80rem;				
 			margin-top: 0rem;
 			margin-right: auto;
 			margin-bottom: 0rem;
