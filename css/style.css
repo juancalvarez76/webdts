@@ -80,8 +80,8 @@ span{
 	text-transform: uppercase;
 	font-size: 1.2rem;
 	font-weight: bold;
-
 	border:none;
+	align-content: center;
 }
 
 .boton:hover{
@@ -117,12 +117,12 @@ span{
 }
 
 .servicio h3{
-	color: var(--secundario);
+	color: var(--azultec);
 	font-weight: normal;
 }
 
 .servicio p{
-	color: var(--oscuro);
+	color: var(--negro);
 	text-align: center;
 	line-height: 2;
 }
@@ -231,7 +231,7 @@ span{
 
 /* seccion hero */
 .hero{
-	background-image: url(../images/webintecs.png);
+	background-image: url(../img/bannerweb.PNG);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 450px;
@@ -244,7 +244,7 @@ span{
 
 .contenido-hero{
 	position: absolute;
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgba(0, 0, 0, .5);
 
 	left: 0rem;
 	right: 0rem;
