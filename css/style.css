@@ -5,7 +5,7 @@
 	--negro: #000;
 	--verdeeco: hsla(140, 98%, 58%, 0.952);
 	--azultec: #005ca7;
-	--gristec: #e4dede;
+	--gristec: #e4deded2;
 }
 
 /*estilos Globales */
@@ -18,8 +18,8 @@ html {
 }
 
 	body{
-		font-size: 16px; /*definier tamaño de fuente por defecto*/
-		font-family: "Krub", sans-serif;/*BP defienr fuente global*/ 
+		font-size: 16px; /*para definir tamaño de fuente por defecto*/
+		font-family: "Krub", sans-serif;/*BP define fuente global*/ 
 
 		background-image: linear-gradient(to top, #dfe9f3, var(--blanco));
 		/*como denotar un degradado */
