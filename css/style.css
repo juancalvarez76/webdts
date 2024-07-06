@@ -1,11 +1,14 @@
 /*seudo selector root permite definir variables*/
 /* implementa una paleta de colores inicial de acuerdo a manual de marca del cliente*/
+
 :root{
 	--blanco: #fff;
 	--negro: #000;
 	--verdeeco: hsla(140, 90%, 48%, 0.952);
 	--azultec: #005ca7;
 	--gristec: #e4dede71;
+	--doradotec: #ffe818;
+
 }
 
 
@@ -81,7 +84,7 @@ span{
 	font-size: 1.2rem;
 	font-weight: bold;
 	border:none;
-	align-content: center;
+	
 }
 
 .boton:hover{
@@ -286,7 +289,8 @@ span{
 	}
 	.servicios{
 		display: grid;
-		grid-template-columns: 33.3% 33.3% 33.3%;
+		/*<!--grid-template-columns: 33.3% 33.3% 33.3%;-->*/
+		grid-template-columns: 50% 50%;
 		column-gap: 1rem;
 	}
 	.contenedor-campos{
