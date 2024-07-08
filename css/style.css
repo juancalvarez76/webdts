@@ -112,7 +112,6 @@ span{
 /* seccion servicios */
 .servicio{
 	text-align: center;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -237,7 +236,7 @@ span{
 	background-image: url(../img/bannerweb.PNG);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 450px;
+	height: 550px;
 	padding: 20px;
 	position: relative;
 
