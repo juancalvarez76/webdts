@@ -1,31 +1,24 @@
-/* FETCH INICIAL */
-// fetch('https://jsonplaceholder.typicode.com/posts')
-//   .then((response) => response.json())
-//   .then((json) => console.log(json));
-
-
-// fetch('https://jsonplaceholder.typicode.com/posts')
-//   .then((respuesta) => respuesta.json())
-//   .then((datos) => {
-//       console.log(datos);
-//       let titulo = document.querySelector(".titulo").textContent = datos[1].title;
-//       let contenido = document.querySelector(".contenido").textContent = datos[1].body;
-
-// });
-
-
-fetch('https://jsonplaceholder.typicode.com/posts')
-  .then((respuesta) => respuesta.json())
-  .then((datos) => {
-      console.log(datos);
-      datos.forEach((post) => {
-        document.querySelector(".contenedor-padre").innerHTML += `<div class="tarjeta">
-                                  <div class="titulo">${post.title}</div>
-                                  <p class="contenido">${post.body}</p></div>` 
-      })
+const headers = new Headers({
+  "Content-Type": "application/json",
+  "x-api-key": "live_LhtHyP2RVbiyr58q2eSaZyObsWq0Van0AtgwhtVf1KEdJqZKVmJL1cbnUvS0za1x"
 });
 
+var requestOptions = {
+  method: 'GET',
+  headers: headers,
+  redirect: 'follow'
+};
 
-// let titulo = document.querySelector(".titulo").textContent = "Titulo desde JS";
-// let contenido = document.querySelector(".contenido").textContent = "Contenido desde JS";
-//   ` ` ALTGR + } 
+fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has0_breeds=true&order=RANDOM&page=0&limit=10", requestOptions)
+  .then(response => response.json())
+  .then((result) => {
+                console.log(result);
+                      result.forEach((post) => {
+                        document.querySelector(".contenedor-padre").innerHTML += `<div class="tarjeta">
+                                <div class="titulo">${post.title}</div>
+                                <p class="contenido">${post.body}</p></div>` 
+    })
+});
+  //.catch(error => console.log('error', error));        
+
+
