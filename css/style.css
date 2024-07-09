@@ -6,7 +6,7 @@
 	--negro: #000;
 	--verdeeco: hsla(140, 90%, 48%, 0.952);
 	--azultec: #005ca7;
-	--gristec: #e4dede71;
+	--gristec: #e4dede1e;
 	--doradotec: #ffe818;
 
 }
@@ -92,6 +92,7 @@ span{
 }
 
 .titulo{
+
 	font-weight: 700;
 	font-style: normal;
 	color:var(--azultec);
@@ -233,10 +234,10 @@ span{
 
 /* seccion hero */
 .hero{
-	background-image: url(../img/bannerweb.PNG);
+	background-image: url(../img/bannerweb.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 550px;
+	height: 450px;
 	padding: 20px;
 	position: relative;
 
