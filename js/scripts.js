@@ -7,7 +7,6 @@ const datos = {
 	mensaje: ''
 }
 
-
 //Evento de los Imputs
 //---Metodo querySelector, devuelve el primer elemento del documeto que coincida con el selector
 let nombre = document.querySelector('#nombre');
@@ -88,6 +87,4 @@ function mostrarMensaje(mensaje){
 
 
 }	
-
-
 
