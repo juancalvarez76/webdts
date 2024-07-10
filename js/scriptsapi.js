@@ -9,16 +9,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has0_breeds=true&order=RANDOM&page=0&limit=10", requestOptions)
+fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has0_breeds=true&order=RANDOM&page=0&limit=12", requestOptions)
   .then(response => response.json())
   .then((result) => {
                 console.log(result);
                      result.forEach((cat) => {
                         document.querySelector(".contenedor-padre").innerHTML += `<div class="tarjeta">
                                 <div class="titulo">${cat.id}</div>
-                                <p class="contenido"><img src="${cat.url}"></p></div>` 
+                                <p class="contenido"><img src="${cat.url}" alt="Imagen de gato" width="80%" height="59%" align="center"></p></div>` 
    })
 });
-  //.catch(error => console.log('error', error));        
-
-
+  //.catch(error => console.log('error', error));
