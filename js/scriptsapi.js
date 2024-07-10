@@ -13,11 +13,11 @@ fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format
   .then(response => response.json())
   .then((result) => {
                 console.log(result);
-                      result.forEach((post) => {
+                     result.forEach((cat) => {
                         document.querySelector(".contenedor-padre").innerHTML += `<div class="tarjeta">
-                                <div class="titulo">${post.title}</div>
-                                <p class="contenido">${post.body}</p></div>` 
-    })
+                                <div class="titulo">${cat.id}</div>
+                                <p class="contenido"><img src="${cat.url}"></p></div>` 
+   })
 });
   //.catch(error => console.log('error', error));        
 
