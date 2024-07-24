@@ -14,9 +14,7 @@ fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format
   .then((result) => {
                 console.log(result);
                      result.forEach((cat) => {
-                        document.querySelector(".contenedor-padre").innerHTML += `<div class="tarjeta">
-                                <div class="titulo">${cat.id}</div>
-                                <p class="contenido"><img src="${cat.url}" alt="Imagen de gato" ></p></div>` 
+                        document.querySelector(".contenedor-cat").innerHTML += `<div class="iconocat"> 
+                                <img src="${cat.url}" alt="Imagen de gato" width="80%" height="80%" ></div>` 
    })
 });
-  //.catch(error => console.log('error', error));
