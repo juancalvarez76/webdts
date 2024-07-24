@@ -7,7 +7,7 @@
 	--verdeeco: hsla(140, 90%, 48%, 0.952);
 	--azultec: #005ca7;
 	--gristec: #e4dede75;
-	--doradotec: #ffe818;
+	--doradotec: #ffe818c9;
 
 }
 
@@ -25,10 +25,7 @@ body{
 	font-size: 16px;
 	font-family: "Krub", sans-serif;
 
-	background-image: linear-gradient(to top, #dfe9f3, var(--blanco));
-
-/*	background-image: linear-gradient(to bottom, #3a3ba0, #ffffff);*/
-/*	background-image: radial-gradient(circle, red, yellow, green);*/
+	background-image: linear-gradient(to top, #dfe9f3cc, var(--blanco));
 
 }
 
@@ -145,10 +142,10 @@ span{
 
 
 .servicio .iconos{
-	height: 150px;
-	width: 150px;
-	background-color: var(--doradotec);
-	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	background-color: var(--azultec);
+	border-radius: 20%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -157,6 +154,16 @@ span{
 .iconocat{
 	height: 250px;
 	width: 250px;
+	background-color: var(--doradotec);
+	border-radius: 5%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.servicio .iconosge{
+	height: 250px;
+	width: 550px;
 	background-color: var(--doradotec);
 	border-radius: 5%;
 	display: flex;
@@ -287,6 +294,10 @@ span{
 	color: var(--blanco);
 }
 
+.somos{
+	text-align: center;
+}
+
 
 .footer{
 	text-align: center;
@@ -338,9 +349,7 @@ span{
         column-gap: 1rem;
         row-gap: 1rem;
     }
-   .tarjeta {
-        width: 320px; 
-    }
+
 
 }
 
@@ -348,14 +357,10 @@ span{
 	.contenedor-cat{
         grid-template-columns: auto auto auto;
     }
-   .tarjeta {
-        width: 350px; 
-    }
-
+   
 	.seguridad-electronica{
 		display: grid;
-		/*<!--grid-template-columns: 33.3% 33.3% 33.3%;-->*/
-		grid-template-columns: 50% 50% 50%;
+		grid-template-columns: 50% 50%;
 		column-gap: 1rem;
 	}
 }
